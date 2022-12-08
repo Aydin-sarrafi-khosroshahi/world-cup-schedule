@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wordpress Theme</title>.
+    <title>World Cup Schedule</title>
     <!-- FAVICON !!!!!!!!!!!!!!!!!  -->
     <link rel="shortcut icon" href="assets/images/favicon/images.png" type="image/x-icon">
     <!-- CSS files !!!!!!!!!!!!!!!!!  -->
@@ -12,322 +12,94 @@
 </head>
 
 <body dir="ltr">
-    <header class="main-header">
-        <div class="fixed-menu">
-            <div class="container">
-                <!-- header menu position absolute -->
-                <div class="top-header d-flex align-items-center justify-content-between">
-                    <a class="header-logo" href="#">
-                        Meduim
-                    </a>
-                    <ul class="header-menu d-flex align-items-center justify-content-end w-100 m-0 p-0">
-                        <li>
-                            <a class="rounded-pill" href="#">
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a class="rounded-pill" href="#">
-                                Blog
-                            </a>
-                        </li>
-                        <li>
-                            <a class="rounded-pill" href="#">
-                                About
-                            </a>
-                        </li>
 
-                        <li>
-                            <a class="gs-btn rounded-pill" href="#">
-                                Get Started
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <!-- header bg and content -->
-            <div class="header-content-bg">
-                <div class="d-flex align-items-center w-100 h-100 my-5">
-                    <div class="header-content">
-                        <h1 class="font-100 text-bold1">
-                            Stay curious.
-                        </h1>
-                        <p class="mb-4 font-18 text-bold3">
-                            Discover stories, thinking, and expertise <br> from writers on any topic.
-                        </p>
-                        <button class="btn bg-dark text-white rounded-pill px-5 py-2 font-18">
-                            Start Reading
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
 
-    <!-- trending posts section -->
     <section>
+
         <div class="container">
+
+            <!-- form to get information -->
             <div class="row">
+
                 <div class="col-12">
-                    <div>
-                        <h2 class="font-16 text-bold3 posts-title">
-                            <img src="assets/images/icnos/corner-up-right.svg" alt="">
-                            <span>TRENDING ON MEDIUM</span>
-                        </h2>
-                    </div>
-                </div>
-            </div>
+
+                    <form action="" method="" >
+
+                        <label for="countries-number">Number of countries are in cup :</label>
+                        <input type="number" name=""  id="countries-number" class="" placeholder="enter number" required />
+                        <!-- <span>The number must be divisible by 4</span> -->
+
+                        <button class="" id="submit-btn" type="button">
+                            Submit
+                        </button>
+
+                    </form>
+
+                </div><!-- end col -->
+
+            </div><!-- end row -->
+
+
+            <!-- table of the groups -->
             <div class="row">
-                <div class="col-md-4">
-                    <div class="m-4">
-                        <a href="">
-                            <div class="d-flex align-items-center mb-3">
-                                <img src="assets/images/main-page-images/trend-img.png" alt="">
-                                <p class="mb-0 me-2 text-dark font-14 text-bold3">Arthur Hayes <span
-                                        class="text-secondary">in</span> Entrepreneur's Handbook</p>
-                            </div>
-                            <h3 class="font-16 text-bold4 my-2 text-dark">
-                                Seeing through hardware counters: a journey to threefold performance increase
-                            </h3>
-                        </a>
-                        <div class="text-secondary font-12">
-                            <span>
-                                Nov 9
-                            </span>
-                            <span>
-                                .
-                            </span>
-                            <span>
-                                10 min read
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="m-4">
-                        <a href="">
-                            <div class="d-flex align-items-center mb-3">
-                                <img src="assets/images/main-page-images/trend-img.png" alt="">
-                                <p class="mb-0 me-2 text-dark font-14 text-bold3">Arthur Hayes <span
-                                        class="text-secondary">in</span> Entrepreneur's Handbook</p>
-                            </div>
-                            <h3 class="font-16 text-bold4 my-2 text-dark">
-                                Seeing through hardware counters: a journey to threefold performance increase
-                            </h3>
-                        </a>
-                        <div class="text-secondary font-12">
-                            <span>
-                                Nov 9
-                            </span>
-                            <span>
-                                .
-                            </span>
-                            <span>
-                                10 min read
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="m-4">
-                        <a href="">
-                            <div class="d-flex align-items-center mb-3">
-                                <img src="assets/images/main-page-images/trend-img.png" alt="">
-                                <p class="mb-0 me-2 text-dark font-14 text-bold3">Arthur Hayes <span
-                                        class="text-secondary">in</span> Entrepreneur's Handbook</p>
-                            </div>
-                            <h3 class="font-16 text-bold4 my-2 text-dark">
-                                Seeing through hardware counters: a journey to threefold performance increase
-                            </h3>
-                        </a>
-                        <div class="text-secondary font-12">
-                            <span>
-                                Nov 9
-                            </span>
-                            <span>
-                                .
-                            </span>
-                            <span>
-                                10 min read
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+                <div class="col-12">
+
+                    <table class="teams-group">
+
+                        <thead>
+
+                            <tr>
+                                <th>rows</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+                           
+                            <tr>
+                                <td>1</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td>3</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div><!-- end col -->
+
+            </div><!-- end row -->
+
+
+
+        </div><!-- end container -->
+
     </section>
-
-    <!-- main contant and side bar -->
-
-    <section>
-        <div class="container">
-            <div class="row cp-margin">
-                <!-- main contant -->
-                <div class="col-md-8">
-                    <!-- content -->
-                    <div class="row align-items-center mb-5 pb-3">
-                        <div class="col-8">
-                            <div class="d-flex align-items-center mb-2">
-                                <img src="assets/images/main-page-images/i1.png" alt="">
-                                <p class="mb-0 me-2 text-dark font-14 text-bold3">
-                                    Ben Sinder <span class="text-secondary">in</span> UX Collective
-                                </p>
-                            </div>
-                            <h3 class="font-18 text-bold3">
-                                Middle Seat x John Fetterman: Flipping a U.S. Senate Seat from Red to Blue
-                            </h3>
-                            <p class="text-secondary font-14">
-                                How Early and Sustained Investments in Digital Propelled Fetterman to Victory
-                            </p>
-                            <div class="text-secondary font-12">
-                                <span>Nov 9</span><span> . </span><span>10 min read</span>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="w-100 post-thumnail">
-                                <img class="w-100" src="assets/images/main-page-images/thumnail.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    
-
-                    <!-- content -->
-                    <div class="row align-items-center mb-5 pb-3">
-                        <div class="col-8">
-                            <div class="d-flex align-items-center mb-2">
-                                <img src="assets/images/main-page-images/i1.png" alt="">
-                                <p class="mb-0 me-2 text-dark font-14 text-bold3">
-                                    Ben Sinder <span class="text-secondary">in</span> UX Collective
-                                </p>
-                            </div>
-                            <h3 class="font-18 text-bold3">
-                                Middle Seat x John Fetterman: Flipping a U.S. Senate Seat from Red to Blue
-                            </h3>
-                            <p class="text-secondary font-14">
-                                How Early and Sustained Investments in Digital Propelled Fetterman to Victory
-                            </p>
-                            <div class="text-secondary font-12">
-                                <span>Nov 9</span><span> . </span><span>10 min read</span>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="w-100 post-thumnail">
-                                <img class="w-100" src="assets/images/main-page-images/thumnail.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- thumbnail -->
-                </div>
-
-                <!-- side bar -->
-                <div class="col-md-4">
-                    <div class="fixed-sidebar">
-                        <h3 class="font-16 text-bold3">
-                            DISCOVER MORE OF WHAT MATTERS TO YOU
-                        </h3>
-                        <div>
-                            <ul class="d-flex flex-wrap p-0 me-3">
-                                <li class="m-2">
-                                    <a class="text-secondary" href="">Programming</a>
-                                </li>
-                                <li class="m-2">
-                                    <a class="text-secondary" href="">Data Science</a>
-                                </li>
-                                <li class="m-2">
-                                    <a class="text-secondary" href="">Technology</a>
-                                </li>
-                                <li class="m-2">
-                                    <a class="text-secondary" href="">Self Improvement</a>
-                                </li>
-                                <li class="m-2">
-                                    <a class="text-secondary" href="">Writing</a>
-                                </li>
-                                <li class="m-2">
-                                    <a class="text-secondary" href="">Relationships</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="main-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h4 class="text-white font-20 text-bold3 mb-3">Footer Description</h4>
-                    <p class="text-justify text-white">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua Egestas purus viverra accumsan in nisl nisi Arcu cursus vitae
-                        congue mauris rhoncus aenean vel elit scelerisque In egestas erat imperdiet sed euismod nisi
-                        porta lorem mollis
-                    </p>
-                </div>
-                <div class="col-md-3">
-                    <div class="d-flex align-items-center justify-content-center">
-                        <div>
-                            <h5 class="text-white font-20 text-bold3 mb-3">
-                                Footer Links
-                            </h5>
-                            <ul class="p-0 m-0">
-                                <li class="mb-2">
-                                    <a class="text-white font-18" href="">Home</a>
-                                </li>
-                                <li class="mb-2">
-                                    <a class="text-white font-18" href="">Blog</a>
-                                </li>
-                                <li class="mb-2">
-                                    <a class="text-white font-18" href="">About</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="d-flex align-items-center justify-content-center">
-                        <div>
-                            <h5 class="text-white font-20 text-bold3 mb-3">
-                                Social Media
-                            </h5>
-                            <ul class="p-0 m-0 d-flex align-items-center">
-                                <li>
-                                    <a class="mx-2 socail-links" href="">
-                                        <img src="assets/images/icnos/instagram (1).svg" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="mx-2 socail-links" href="">
-                                        <img src="assets/images/icnos/twitter (1).svg" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="mx-2 socail-links" href="">
-                                        <img src="assets/images/icnos/linkedin (1).svg" alt="">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-
-
-
-
 
     <!-- SCRIPT files !!!!!!!!!!!!!!!!!  -->
     <script src="assets/libs/jquery/jquery-3.6.0.min.js"></script>
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
+
 </body>
 
 </html>

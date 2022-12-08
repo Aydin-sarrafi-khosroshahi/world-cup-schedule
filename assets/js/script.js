@@ -1,57 +1,155 @@
-var menuAlpha = document.getElementById("mj-ay-menu-opacity")
-var menuBox = document.getElementById("mj-ay-menu-bg")
-var toggle = document.getElementById("mj-ay-menu-toggeler")
-var Closebtn = document.getElementById("Closebtn")
+const AllTeams = [
 
-toggle.onclick = function () {
-    menuAlpha.classList.toggle('mj-ay-active')
-    menuBox.classList.toggle('mj-ay-active2')
-}
-Closebtn.onclick = function () {
-    menuAlpha.classList.remove('mj-ay-active')
-    menuBox.classList.remove('mj-ay-active2')
-}
+    {
+        
+        name : 'Qatar',
+        slugURL : '',
+    },
 
-// outside click 
-document.onclick = function (e) {
-    if (e.target.id == "mj-ay-menu-opacity") {
-        menuAlpha.classList.remove('mj-ay-active')
-        menuBox.classList.remove('mj-ay-active2')
+    {
+        name : 'Ecuador',
+        slugURL : '',
+    },
+
+    {
+        name : 'Senegal',
+        slugURL : '',
+    },
+
+    {
+        name : 'The Netherlands',
+        slugURL : '',
+    },
+
+    {
+        name : 'England',
+        slugURL : '',
+    },
+
+    {
+        name : 'Iran',
+        slugURL : '',
+    },
+
+    {
+        name : 'USA',
+        slugURL : '',
+    },
+
+    {
+        name : 'Wales',
+        slugURL : '',
+    },
+
+    {
+        name : 'Argentina',
+        slugURL : '',
+    },
+
+    {
+        name : 'Saudi Arabia',
+        slugURL : '',
+    },
+
+    {
+        name : 'Mexico',
+        slugURL : '',
+    },
+
+    
+    {
+        name : 'Poland',
+        slugURL : '',
+    },
+
+    
+    {
+        name : 'France',
+        slugURL : '',
+    },
+
+    
+    {
+        name : 'Australia',
+        slugURL : '',
+    },
+
+    
+    {
+        name : 'Denmark',
+        slugURL : '',
+    },
+
+
+    {
+        name : 'Tunisia',
+        slugURL : '',
+    },
+
+
+    {
+        name : 'Spain',
+        slugURL : '',
+    },
+
+
+    {
+        name : 'Costa Rica',
+        slugURL : '',
+    },
+
+    
+    {
+        name : 'Germany',
+        slugURL : '',
+    },
+
+    {
+        name : 'Japan',
+        slugURL : '',
+    },
+
+];
+
+
+$('#submit-btn').click(function () {
+    var inputNum = $('#countries-number').val();
+    if( inputNum < 0 ) {
+        alert("this cant be negative");
     }
-}
-// finished menu
+    else if( inputNum == 0 ) {
+        alert("this cant be 0");
+    }
+    else if ( inputNum > 20 ) {
+        alert("there are 20 teams");
+    }
+    else if( inputNum % 4 == 0 ) {
+
+        var randomIndex = Math.floor( Math.random() * AllTeams.length ); 
+
+        var randomIndex = [];
+
+        for( let i = 0 ; i <= inputNum-1 ; i++ ) {
+            randomIndex.push( Math.floor( Math.random() * AllTeams.length )) ; 
+
+        }
+
+        for( let j = 0 ; j <= randomIndex.length-1 ; j++ ) {
+            console.log(randomIndex[j]);
+
+            for( let z = 0 ; z <= AllTeams.length-1 ; z++) {
+                console.log(AllTeams[z]);
+            }
+
+        }
+
+
+    }else {
+        alert("The number must be divisible by 4");
+    }
+})
 
 
 
 
-
-
-
-
-
-
-
-var video = document.getElementById('mj-ay-pop-up-video');
-var videoBox = document.getElementById('mj-ay-video-modal');
-var VideoBtn = document.getElementById('mj-ay-video-play');
-var VideoCloseBtn = document.getElementById("mj-ay-closebtn-video");
-
-VideoBtn.addEventListener('click', OpenBox);
-function OpenBox() {
-    videoBox.style.opacity = "1";
-    videoBox.style.visibility = "visible";
-}
-VideoCloseBtn.addEventListener('click' , closeBox);
-function closeBox ()
-{
-    videoBox.style.opacity = "0";
-    videoBox.style.visibility = "hidden";
-}
-
-video.onended = function() {
-    videoBox.style.opacity = "0";
-    videoBox.style.visibility = "hidden";
-};
-
-// finished video pop up
 

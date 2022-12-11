@@ -131,6 +131,9 @@ const AllTeams = [
 ];
 
 
+var teamsContainer = document.getElementById('teams-container');
+
+
 $('#submit-btn').click(function () {
 
     var inputNum = $('#countries-number').val();
@@ -146,18 +149,7 @@ $('#submit-btn').click(function () {
         alert("there are 20 teams");
     }
 
-    else {
-
-        // var nums = [1,2,3,4,5,6,7,8,9,10],
-        // ranNums = [],
-        // i = nums.length,
-        // j = 0;
-
-        // while (i--) {
-        //     j = Math.floor(Math.random() * (i+1));
-        //     ranNums.push(nums[j]);
-        //     nums.splice(j,1);
-        // }
+    else if( inputNum % 4 == 0 ) {
 
         var ranNumArr = [];
         var TeamsLength = AllTeams.length;
@@ -171,11 +163,40 @@ $('#submit-btn').click(function () {
 
         }
 
-        for( let i = 0 ; i <= ranNumArr.length ; i++ ) {
 
-            console.log( ranNumArr[i].name );
+        const chunkSize = 4;
+        var groups = [];
 
+        for ( let z = 0; z < ranNumArr.length ; z += chunkSize ) {
+
+            groups.push( ranNumArr.slice( z , z + chunkSize ) );
+            
         }
+
+        console.log(groups);
+
+        // for( let n = 0 ; n < groups.length ; n++ ) {
+
+        //     for( let k = 0 ; k < groups[n].length ; k++ ) {
+
+        //         teamsContainer.innerHTML += '<li>' + groups[n][k].name + '</li>';
+
+        //     }
+
+        // }
+
+        // console.log(groups[0]);
+
+
+
+
+
+
+        // for( let i = 0 ; i <= ranNumArr.length ; i++ ) {
+
+        //     teamsContainer.innerHTML += '<li>' + ranNumArr[i].name + '</li>';
+
+        // }
 
         // for( let i = 0 ; i <= inputNum-1 ; i++ ) {
 
@@ -205,6 +226,11 @@ $('#submit-btn').click(function () {
         //console.log(AllTeams);
         //console.log(randomTeamsIndex);
         
+    }
+    else {
+
+        alert("The number must be divisible by 4");
+
     }
     // else if( inputNum % 4 == 0 ) {
 
@@ -242,13 +268,13 @@ $('#submit-btn').click(function () {
 
     //     }// end for(1)
         
-    //     const chunkSize = 4;
-    //     for ( let i = 0; i < teamsGroup.length; i += chunkSize ) {
+        // const chunkSize = 4;
+        // for ( let i = 0; i < teamsGroup.length; i += chunkSize ) {
 
-    //         groups.push( teamsGroup.slice(i, i + chunkSize) );
+        //     groups.push( teamsGroup.slice(i, i + chunkSize) );
             
-    //     }
-    //     console.log(groups);
+        // }
+        // console.log(groups);
 
     // }// end main if
 
